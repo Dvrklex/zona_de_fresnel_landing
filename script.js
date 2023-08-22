@@ -1,6 +1,7 @@
 document.getElementById('calculate').addEventListener('click', function() {
     const distance = parseFloat(document.getElementById('distance').value);
-    const frequency = parseFloat(document.getElementById('frequency').value);
+    const frequency = parseFloat(document.getElementById('frecuency').value);
+
     
     if (isNaN(distance) || isNaN(frequency)) {
         document.getElementById('result').textContent = "Por favor, ingresa valores válidos.";

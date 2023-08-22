@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Zona de Fresnel Calculator</title>
+    <title>Floating Placeholder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Zona de Fresnel Calculator</h1>
-        <label for="distance">Distancia (km):</label>
-        <input type="number" id="distance" step="0.1">
-        
-        <label for="frequency">Frecuencia (Hz):</label>
-        <input type="number" id="frequency">
-        
+    <section>
+        <div class="glitch-wrapper">
+            <div class="glitch" data-text="Calculadora Zona de Fresnel">Calculadora <br> Zona de Fresnel</div> 
+         </div>
+        <div class="form-group">
+            <input type="number" id="distance" placeholder="Distancia" />
+            <label class="form-label" for="distance" step="0.1">Distancia (Km)</label>
+        </div>
+        <div class="form-group">
+            <input type="number" id="frecuency" placeholder="Frecuencia" />
+            <label class="form-label" for="frecuency">Frecuencia</label>
+        </div>
         <button id="calculate">Calcular</button>
         
-        <div id="result"></div>
-    </div>
-    
+        <div id="result">
+            <h1>Resultados</h1>
+        </div>
+        <p style="color:aliceblue">By Rosales Alexis</p>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
